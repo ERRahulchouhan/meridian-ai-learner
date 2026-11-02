@@ -1,0 +1,13 @@
+git clone https://github.com/mayank953/meridian-ai-learner.git && cd meridian-ai-learner
+cp .env.example .env     # then add your OPENAI_API_KEY, no quote marks
+docker ps -a --filter ancestor=meridian-ai
+docker rm -f <OLD_CONTAINER_ID>
+docker build --no-cache -t meridian-ai .
+docker images meridian-ai
+
+
+
+docker run -d --name meridian -p 8080:8080 --env-file .\backend\.env meridian-ai
+docker ps
+docker logs meridian
+curl http://localhost:8080/api/health
