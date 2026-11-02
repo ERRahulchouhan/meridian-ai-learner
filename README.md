@@ -1,3 +1,4 @@
+
 # Meridian AI  
 
 A small web app that does two jobs, using AI: 
@@ -464,5 +465,4 @@ When something fails, read the last lines in the terminal. The app writes a diar
 ---
 
 *Aldermoor Industries and all sample data are fictional.*
-#   m e r i d i a n - a i - l e a r n e r  
- 
+#
